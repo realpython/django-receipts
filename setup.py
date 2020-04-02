@@ -1,8 +1,14 @@
+import os
+
+readme = os.path.join(os.path.dirname(__file__), 'README.rst')
+long_description = open(readme).read()
+
 SETUP_ARGS = dict(
     name='realpython-django-receipts',
     version='1.0',
     description='Sample installable django app',
-    url='<URL>',
+    long_description=long_description,
+    url='https://github.com/realpython/django-receipts',
     license='MIT',
     include_package_data=True,
     classifiers=[
