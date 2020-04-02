@@ -41,10 +41,10 @@ $ ./manage.py makemigrations receipts
 
 ## The "project" Branch
 
-The [master branch](???) contains the final code for the PyPI package. There is also a [project branch](???) which shows the "before" case -- the Django project before the app has been removed.
+The [master branch](https://github.com/realpython/django-receipts/tree/master) contains the final code for the PyPI package. There is also a [project branch](https://github.com/realpython/django-receipts/tree/project) which shows the "before" case -- the Django project before the app has been removed.
 
 ## Docs & Source
 
-Article: ???
-Source: ???
-PyPI: ???
+* Article: ???
+* Source: https://github.com/realpython/django-receipts
+* PyPI: ???
