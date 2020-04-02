@@ -5,7 +5,7 @@ long_description = open(readme).read()
 
 SETUP_ARGS = dict(
     name='realpython-django-receipts',
-    version='1.0',
+    version='1.0.1',
     description='Sample installable django app',
     long_description=long_description,
     url='https://github.com/realpython/django-receipts',

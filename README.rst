@@ -58,4 +58,4 @@ Docs & Source
 
 * Article: ???
 * Source: https://github.com/realpython/django-receipts
-* PyPI: ???
+* PyPI: https://pypi.org/project/realpython-django-receipts/
