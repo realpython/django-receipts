@@ -9,13 +9,8 @@ class Receipt(models.Model):
     def __str__(self):
         return f'Receipt(id={self.id})'
 
-    def total_receipt(self):
-        total = Decimal(0)
-
-        for item in self.item_set.all():
-            total += item.cost
-
-        return total
+    def total(self) -> Decimal:
+        return sum(item.cost for item in self.item_set.all())
 
 
 class Item(models.Model):
