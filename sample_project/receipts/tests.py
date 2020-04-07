@@ -9,7 +9,7 @@ class ReceiptTest(TestCase):
 
     def test_receipt(self):
         receipt = Receipt.objects.get(id=1)
-        total = receipt.total_receipt()
+        total = receipt.total()
 
         expected = Decimal('37.55')
         self.assertEqual(expected, total)
