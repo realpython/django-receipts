@@ -56,6 +56,6 @@ The `master branch <https://github.com/realpython/django-receipts/tree/master>`_
 Docs & Source
 -------------
 
-* Article: ???
+* Article: https://realpython.com/installable-django-app/
 * Source: https://github.com/realpython/django-receipts
 * PyPI: https://pypi.org/project/realpython-django-receipts/
