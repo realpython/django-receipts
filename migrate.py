@@ -7,4 +7,4 @@ from boot_django import boot_django
 # call the django setup routine
 boot_django()
 
-call_command('migrate')
+call_command("migrate")

@@ -8,7 +8,7 @@ from boot_django import boot_django
 # call the django setup routine
 boot_django()
 
-default_labels = ['receipts.tests', ]
+default_labels = ["receipts.tests", ]
 
 def get_suite(labels=default_labels):
     from django.test.runner import DiscoverRunner
@@ -21,7 +21,7 @@ def get_suite(labels=default_labels):
     return TestSuite()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     labels = default_labels
     if len(sys.argv[1:]) > 0:
         labels = sys.argv[1:]
