@@ -7,7 +7,7 @@ class Receipt(models.Model):
     created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f'Receipt(id={self.id})'
+        return f"Receipt(id={self.id})"
 
     def total(self):
         return sum(item.cost for item in self.item_set.all())
@@ -21,5 +21,5 @@ class Item(models.Model):
     receipt = models.ForeignKey(Receipt, on_delete=models.CASCADE)
 
     def __str__(self):
-        return f'Item(id={self.id}, description={self.description}, ' \
-            f'cost={self.cost})'
+        return f"Item(id={self.id}, description={self.description}, " \
+            f"cost={self.cost})"

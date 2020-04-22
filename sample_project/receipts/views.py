@@ -4,7 +4,7 @@ from receipts.models import Receipt
 
 def receipt_json(request):
     results = {
-        'receipts':[],
+        "receipts":[],
     }
 
     for receipt in Receipt.objects.all():
@@ -12,6 +12,6 @@ def receipt_json(request):
         for item in receipt.item_set.all():
             line[1].append(str(item))
 
-        results['receipts'].append(line)
+        results["receipts"].append(line)
 
     return JsonResponse(results)
