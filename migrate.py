@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# migrate.py
 
 from django.core.management import call_command
 

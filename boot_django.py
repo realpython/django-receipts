@@ -1,10 +1,14 @@
+# boot_django.py
+#
 # File sets up the django environment, used by other scripts that need to
-# execute in django land
-import os
+# execute in Django land
+import sys
+from pathlib import Path
 import django
 from django.conf import settings
 
-BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "receipts"))
+BASE_DIR = Path(__file__).parent / "src/"
+sys.path.insert(0, str(BASE_DIR))
 
 def boot_django():
     settings.configure(
@@ -13,7 +17,7 @@ def boot_django():
         DATABASES={
             "default":{
                 "ENGINE":"django.db.backends.sqlite3",
-                "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+                "NAME": BASE_DIR / "db.sqlite3",
             }
         },
         INSTALLED_APPS=(

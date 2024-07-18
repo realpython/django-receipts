@@ -1,3 +1,4 @@
+# receipts/urls.py
 from django.urls import path
 
 from receipts import views

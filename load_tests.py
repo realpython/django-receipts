@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#import os, sys
+# load_tests.py
 import sys
 from unittest import TestSuite
 
