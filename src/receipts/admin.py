@@ -1,4 +1,3 @@
-# receipts/admin.py
 from django.contrib import admin
 
 from receipts.models import Receipt, Item

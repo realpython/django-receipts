@@ -1,4 +1,3 @@
-# receipts/views.py
 from django.http import JsonResponse
 from receipts.models import Receipt
 

@@ -1,4 +1,3 @@
-# noxfile.py
 import nox
 
 # 4.2 is LTS end of life April 2026

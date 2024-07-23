@@ -1,4 +1,3 @@
-# receipts/tests.py
 from decimal import Decimal
 from django.test import TestCase
 from receipts.models import Receipt

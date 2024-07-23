@@ -1,5 +1,3 @@
-# boot_django.py
-#
 # File sets up the django environment, used by other scripts that need to
 # execute in Django land
 import sys

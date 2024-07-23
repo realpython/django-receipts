@@ -1,3 +1,40 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools >= 40.9.0", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "realpython-django-receipts"
+version = "1.1.0"
+description = "Sample installable django app"
+readme = "README.rst"
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "Django>=4.2",
+]
+
+[project.urls]
+Repository = "https://github.com/realpython/django-receipts"
+
+[project.optional-dependencies]
+dev = [
+    "build==1.0.3",
+    "nox==2023.4.22",
+    "twine==4.0.2",
+]
