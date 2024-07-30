@@ -11,7 +11,7 @@ Installable App
 
 This app models a list of items on a receipt. Each item has a description and a cost. A receipt may reference multiple items.
 
-This app can be installed and used in your Django project by:
+This app can be installed and used in your Django project with:
 
 .. code-block:: bash
 
