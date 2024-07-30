@@ -1,14 +1,17 @@
 django-receipts
 ===============
 
-This is sample code used in the Real Python article [How to Write and Installable Django Apppp](https://realpython.com/installable-django-app/). The article describes how to take an app from an existing Django project and make it a stand-alone installable package avilable on PyPI.
+This is the sample code used in the Real Python article `How to Write an
+Installable Django App <https://realpython.com/installable-django-app/>`_. The
+article describes how to take an app from an existing Django project and make
+it a stand-alone installable package available on PyPI.
 
 Installable App
 ---------------
 
 This app models a list of items on a receipt. Each item has a description and a cost. A receipt may reference multiple items.
 
-This app can be installed and used in your django project by:
+This app can be installed and used in your Django project by:
 
 .. code-block:: bash
 
