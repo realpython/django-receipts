@@ -1,14 +1,17 @@
 django-receipts
 ===============
 
-This is sample code used in the Real Python article [Writing an Installable Django App](???). The article describes how to take an app from an existing Django project and make it a stand-alone installable package avilable on PyPI.
+This is the sample code used in the Real Python article `How to Write an
+Installable Django App <https://realpython.com/installable-django-app/>`_. The
+article describes how to take an app from an existing Django project and make
+it a stand-alone installable package available on PyPI.
 
 Installable App
 ---------------
 
 This app models a list of items on a receipt. Each item has a description and a cost. A receipt may reference multiple items.
 
-This app can be installed and used in your django project by:
+This app can be installed and used in your Django project with:
 
 .. code-block:: bash
 
@@ -47,10 +50,10 @@ Finally, add the models to your database:
     $ ./manage.py makemigrations receipts
 
 
-The "project" Branch
+The "before" project
 --------------------
 
-The `master branch <https://github.com/realpython/django-receipts/tree/master>`_ contains the final code for the PyPI package. There is also a `project branch <https://github.com/realpython/django-receipts/tree/project>`_ which shows the "before" case -- the Django project before the app has been removed.
+The `before folder <https://github.com/realpython/django-receipts/000_before>`_ shows the "before" case -- the Django project before the app was made installable.
 
 
 Docs & Source

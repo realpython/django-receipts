@@ -1,5 +1,4 @@
 from django.http import JsonResponse
-
 from receipts.models import Receipt
 
 def receipt_json(request):

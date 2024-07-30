@@ -1,7 +1,5 @@
 from decimal import Decimal
-
 from django.db import models
-
 
 class Receipt(models.Model):
     created = models.DateTimeField(auto_now_add=True)
@@ -11,7 +9,6 @@ class Receipt(models.Model):
 
     def total(self) -> Decimal:
         return sum(item.cost for item in self.item_set.all())
-
 
 class Item(models.Model):
     created = models.DateTimeField(auto_now_add=True)
